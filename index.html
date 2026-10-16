@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Happy Birthday Pari 🎀</title>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@500;700&family=Great+Vibes&family=Rock+Salt&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@500;700&family=Great+Vibes&family=Rock+Salt&family=Quicksand:wght@500;700&family=Kalam:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fff1f4;--card:#fff;--ink:#5a1f2e;--red:#c8203c;--pink:#ff8fab;--soft:#ffd6e0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1219;--card:#3b1a24;--ink:#ffe3ea;--soft:#5a2535}}
@@ -153,6 +153,9 @@ section{padding:70px 20px;max-width:980px;margin:auto;position:relative}
 .vmsg{margin-top:14px;text-align:center;color:#fff;font:700 1rem Quicksand,sans-serif;background:#00000066;border-radius:12px;padding:10px 14px}
 .vmsg[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.lwfloat,.lwfloat img,.lwclick{animation:none}}
+#uov .frame img{max-height:60svh}
+.ucap{display:block;width:fit-content;margin:34px auto 6px;max-width:100%;padding:12px 22px;border-radius:18px;border:2px solid #ffb3d6;background:linear-gradient(135deg,#ff4fa3aa,#c8203caa);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 0 10px #ff4fa3,0 0 28px #ff4fa388,inset 0 0 14px #ffffff33;text-align:center;font-family:Kalam,"Noto Sans Devanagari","Mangal",sans-serif;font-weight:700;font-size:clamp(1rem,4.2vw,1.35rem);line-height:1.5;color:#fff0f6;text-shadow:0 0 6px #ff8fc8,0 0 16px #ff4fa3,0 0 34px #ff2d8a;animation:ucapglow 2.6s ease-in-out infinite}
+@keyframes ucapglow{50%{text-shadow:0 0 8px #ffc2e0,0 0 22px #ff6fb5,0 0 46px #ff2d8a}}
 </style></head><body>
 <script>
 /* ============ YAHAN EDIT KARO ============
@@ -224,7 +227,7 @@ const VN_CAPTION="listen carefully jaanu"; /* voice note ke niche ka text */ /* 
 <div class="stage" id="stage"></div>
 <button class="ar" id="next" aria-label="agli photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
 <div class="dots" id="dots"></div><div class="count hand" id="cnt"></div></div></div>
-<div class="ov" id="uov" hidden><button class="x" aria-label="band karo">✕</button><div class="ovin" style="text-align:center"><div class="frame" id="usf"></div></div></div>
+<div class="ov" id="uov" hidden><button class="x" aria-label="band karo">✕</button><div class="ovin" style="text-align:center"><div class="frame" id="usf"></div><div class="ucap">-आ ही जाता है जिस पे दिल आना होता है</div></div></div>
 <div class="ov" id="vov" hidden><button class="x" aria-label="band karo">✕</button><div class="ovin"><div class="vidbox"><video id="lwvid" controls playsinline preload="metadata"></video></div><div class="vmsg" id="vmsg" hidden></div></div></div>
 <script>
 function boom(a){for(let i=0;i<30;i++){const s=document.createElement('span');s.className='conf';s.textContent=a[i%a.length];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),4500)}}
